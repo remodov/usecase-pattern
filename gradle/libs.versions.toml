@@ -1,0 +1,22 @@
+[versions]
+release = "1.1.0"
+
+spring-boot-version = "3.5.0"
+dependency-management-version = "1.1.7"
+spring-version = "6.2.10"
+lombok-version = "1.18.38"
+slf4j-version = "2.0.17"
+commons-lang3-version = "3.17.0"
+
+[libraries]
+slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j-version" }
+lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok-version" }
+commons-lang3 = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commons-lang3-version" }
+spring-boot-autoconfigure = { group = "org.springframework.boot", name = "spring-boot-autoconfigure", version.ref = "spring-boot-version" }
+spring-boot-starter-test = { group = "org.springframework.boot", name = "spring-boot-starter-test", version.ref = "spring-boot-version" }
+spring-context = { group = "org.springframework", name = "spring-context", version.ref = "spring-version" }
+micrometer-core = { group = "io.micrometer", name = "micrometer-core", version = "1.15.2" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot-version" }
+dependency-management = { id = "io.spring.dependency-management", version.ref = "dependency-management-version" }
